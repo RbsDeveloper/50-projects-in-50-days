@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: steelblue;
+    color: white
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5em 2em;
+    border-radius: .5em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.input-control {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-control input{
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: .125em white solid;
+}
+
+input:focus, input:valid {
+    outline: none;
+    border-bottom-color: lightblue;
+}
+
+.input-control label {
+    position: absolute;
+    top: 1rem;
+}
+
+.btn {
+    padding: .5em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+    background-color: lightblue;
+    border: none;
+    border-radius: .5em;
+   
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+span {
+    display: inline-block;
+    min-width: 5px;
+    transition: transform 150ms ease-in;
+}
+
+input:focus + label span,
+input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}

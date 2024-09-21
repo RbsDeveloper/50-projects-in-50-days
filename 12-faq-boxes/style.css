@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    justify-content: center;
+    background-image: linear-gradient(
+          165deg,
+          hsl(202deg 93% 47%) 0%,
+          hsl(264deg 54% 72%) 17%,
+          hsl(331deg 68% 75%) 26%,
+          hsl(5deg 93% 80%) 32%,
+          hsl(30deg 76% 77%) 37%,
+          hsl(31deg 88% 73%) 42%,
+          hsl(32deg 95% 67%) 47%,
+          hsl(33deg 99% 61%) 53%,
+          hsl(37deg 100% 50%) 59%,
+          hsl(13deg 100% 67%) 67%,
+          hsl(342deg 100% 71%) 76%,
+          hsl(319deg 100% 73%) 86%,
+          hsl(270deg 100% 78%) 100%
+        );
+      background-repeat: no-repeat;
+}
+
+.component {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 600px;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    margin-top: 100px;
+    color: #FAFAFA;
+}
+
+.title {
+    text-align: center;
+    color: #333333;
+}
+
+.faq-item {
+    margin: 10px 20px;
+    padding: 7px 14px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: #333333;
+    position: relative;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.faq-answer::before, .faq-answer::after {
+    content: '\f075';
+    font-family: "Font Awesome 5 Free";
+    color: hsl(202deg 93% 47%);
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.faq-answer::after {
+    color: hsl(270deg 100% 78%);
+    top: 42%;
+    left: 55%;
+    transform: rotateY(180deg)
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    color: hsl(202deg 93% 47%);
+    border: none;
+    font-size: 18px;
+}
+
+
+.hide {
+    display: none;
+}
